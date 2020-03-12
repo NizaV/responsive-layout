@@ -1,0 +1,291 @@
+/* ================================= 
+  Base Styles
+==================================== */
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+    color: #000000;
+    margin:0;
+}
+
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.5em;
+}
+
+h1 {
+    color: gold;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: .9em;
+    font-weight: 900;
+    padding-top: 2em;
+    text-align: center;
+}
+
+h2,
+h3,
+a {
+	color: black;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.profile-pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+/* ================================= 
+  Base Layout Styles
+==================================== */
+.main-header {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.name {
+    font-size: 1.85em;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+}
+.nav {
+    padding-left: 0;
+    display: block;
+}
+
+.nav li {
+    text-align: center;
+	background: white;
+	margin-top: 6px;
+    margin-bottom: 6px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    list-style-type: none;
+    
+}
+
+.nav a {
+    font-size: .9em;
+    text-transform: uppercase;
+    color: black;
+    padding: 10px 15px;
+	text-align: center;
+}
+.nav a:hover {
+	color: gold;
+}
+
+.contact {
+    display: block;
+}
+
+.contact a:hover {
+    color: gold;
+}
+
+.main-contact {
+    background: whitesmoke;
+    width:100%;
+    display: inline-block;
+
+}
+
+.main-contact p {
+    padding-left: 2em;
+    padding-right: 2em;
+    
+}
+/* ---- Layout Containers ---- */
+
+.container {
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
+}
+.container p {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.main-container {
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
+
+}
+.main-header {
+	padding: 1em 0;
+    background: whitesmoke;
+}
+
+
+.footer-nav {
+    padding: 2em 0;
+    border-top: 2px solid gold;
+    background: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer-nav h3 {
+    display: inline;
+    font-size: .85em;
+    padding-right: 7em;
+    padding-left: 2em;
+    font-weight: bold;
+}
+
+.footer-ul {
+    display: none;
+}
+
+.to-top {
+    text-transform: uppercase;
+    font-size: smaller;
+    font-weight: bold;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+    .wrap {
+        min-height: calc(100vh - 54.39px);
+    }
+    
+    .container {
+    width: 100%;
+    max-width: 1023px;
+    margin: 0 auto;
+  }
+.container p{
+    padding: 0;
+}
+  .nav li,
+  .nav a {
+      display: inline;
+      padding: 5px 10px;
+  }
+
+  .main-content .col {
+    width: 50%;
+}
+
+.main-content .main-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile-description {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.profile-pic {
+    margin-top: 0;
+    padding-top: 1em;
+    width: 50%;
+    
+}
+.profile-description p{
+    padding-right: 1em;
+    text-align: left;
+    font-size: 1em;
+}
+
+.main-contact p {
+    padding-left: 5em;
+    padding-right: 5em;
+    
+}
+
+.footer-nav {
+    padding: 1em 0 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.footer-ul {
+    display: block;
+    list-style-type: none;
+    margin-top: 0;
+    padding-right: 1em;
+}
+
+.footer-ul li {
+    display: inline;
+    padding-left: 1.25em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 8px;
+}
+
+.to-top {
+    display: none;
+}
+
+  .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+  } 
+}
+
+@media (min-width: 1024px) {
+
+    body {
+        margin: 0 auto;
+    }
+
+    .nav {
+        float: right;
+    }
+    .name {
+        float:left;
+    }
+
+    .main-content .col {
+        width: 33%;
+    }
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    } 
+}
