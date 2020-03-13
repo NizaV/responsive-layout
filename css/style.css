@@ -21,7 +21,7 @@ p {
 }
 
 h1 {
-    color: gold;
+    color:white;
 }
 
 h2 {
@@ -68,6 +68,10 @@ a {
     padding-top: 2em;
     padding-bottom: 2em;
 }
+
+.profile-description p {
+    color: white;
+}
 /* ================================= 
   Base Layout Styles
 ==================================== */
@@ -113,14 +117,19 @@ a {
 }
 
 .contact a:hover {
-    color: gold;
+    color: black;
+}
+.main-contact a,
+.main-contact h2 {
+    color: white;
 }
 
 .main-contact {
-    background: whitesmoke;
+    background:  rgb(40, 112, 141);
     width:100%;
     display: inline-block;
-
+    color: white;
+    
 }
 
 .main-contact p {
@@ -128,6 +137,19 @@ a {
     padding-right: 2em;
     
 }
+.skills-section {
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.skills li {
+    display: inline-block;
+    background: rgb(40, 112, 141);
+    color: white;
+    padding: 5px 10px;
+    margin: 2px;
+    
+  }
 /* ---- Layout Containers ---- */
 
 .container {
@@ -147,14 +169,14 @@ a {
 }
 .main-header {
 	padding: 1em 0;
-    background: whitesmoke;
+    background-color: rgb(40, 112, 141);
 }
 
 
 .footer-nav {
     padding: 2em 0;
-    border-top: 2px solid gold;
-    background: whitesmoke;
+    border-top: 2px solid white;
+    background: rgb(40, 112, 141);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -166,6 +188,7 @@ a {
     padding-right: 7em;
     padding-left: 2em;
     font-weight: bold;
+    color: white;
 }
 
 .footer-ul {
@@ -176,6 +199,7 @@ a {
     text-transform: uppercase;
     font-size: smaller;
     font-weight: bold;
+    color: white;
 }
 
 
@@ -190,7 +214,6 @@ a {
     
     .container {
     width: 100%;
-    max-width: 1023px;
     margin: 0 auto;
   }
 .container p{
